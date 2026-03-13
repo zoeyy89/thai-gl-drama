@@ -1,7 +1,7 @@
 // Navbar.jsx — 導覽列元件，每個頁面都會顯示
 import './Navbar.css'
 import { Link } from 'react-router-dom'
-import logo from '../assets/logo_gray.png'
+import logo from '../assets/logo_white_chinese.png'
 
 function Navbar() {
   return (

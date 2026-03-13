@@ -14,6 +14,17 @@
 - JavaScript
 - GitHub Pages
 
+## 系統設計圖
+
+### 使用者流程圖
+![使用者流程圖](docs/userFlow.png)
+
+### 系統架構圖
+![系統架構圖](docs/systemArchitecture.png)
+
+### 元件關係圖
+![元件關係圖](docs/ReactComponentTree.png)
+
 ## 資料來源
 - [MyDramaList](https://mydramalist.com)
 - [Wikipedia](https://wikipedia.org)

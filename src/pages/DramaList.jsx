@@ -91,7 +91,7 @@ function DramaList() {
 
       {/* 劇集列表 */}
       {sortedYears.length === 0 ? (
-        <p>沒有符合條件的劇集，換個口味</p>
+        <p>沒有符合條件的劇集，換個口味搜尋吧~</p>
       ) : (
         sortedYears.map(year => (
           <div key={year} id={`year-${year}`}>
