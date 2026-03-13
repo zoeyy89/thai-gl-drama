@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import dramas from '../data/dramas.json'
 
@@ -17,8 +17,55 @@ const trailers = [
   }
 ]
 
+// 配色方案
+const colorSchemes = [
+  // 冷色系
+  { bg: '#1a1a2e', accent: '#e94560', text: '#ffffff', sub: '#a8a8b3' },
+  { bg: '#2d1b4e', accent: '#c77dff', text: '#ffffff', sub: '#b8a9c9' },
+  { bg: '#0a2342', accent: '#4facde', text: '#ffffff', sub: '#8cb8d0' },
+  { bg: '#0f2027', accent: '#00d2ff', text: '#ffffff', sub: '#7ecce0' },
+  { bg: '#1c2b3a', accent: '#43e97b', text: '#ffffff', sub: '#7dc49a' },
+  { bg: '#0d2137', accent: '#a18cd1', text: '#ffffff', sub: '#9bacc4' },
+  { bg: '#0a1628', accent: '#38b6ff', text: '#ffffff', sub: '#7ab8d4' },
+  { bg: '#0d1b2a', accent: '#56cfe1', text: '#ffffff', sub: '#8ac8d4' },
+  { bg: '#141852', accent: '#7b9cff', text: '#ffffff', sub: '#9aaee0' },
+  { bg: '#0e2040', accent: '#00b4d8', text: '#ffffff', sub: '#6ab8cc' },
+
+  // 暖色系
+  { bg: '#2c1a0e', accent: '#e08c4a', text: '#ffffff', sub: '#c4a882' },
+  { bg: '#1a0a00', accent: '#ff9a3c', text: '#ffffff', sub: '#d4956a' },
+  { bg: '#1f0a0a', accent: '#ff6b6b', text: '#ffffff', sub: '#c98a8a' },
+  { bg: '#2a1a00', accent: '#ffd166', text: '#ffffff', sub: '#d4b870' },
+  { bg: '#1e0f00', accent: '#ff8c42', text: '#ffffff', sub: '#c47a50' },
+  { bg: '#1a0d00', accent: '#ffba08', text: '#ffffff', sub: '#c49a30' },
+  { bg: '#2d1515', accent: '#ff4d6d', text: '#ffffff', sub: '#c47878' },
+
+  // 紫粉系
+  { bg: '#1f1035', accent: '#ff6b9d', text: '#ffffff', sub: '#c9a8c0' },
+  { bg: '#1a0d2e', accent: '#ff85a1', text: '#ffffff', sub: '#c49bb0' },
+  { bg: '#1c1c1c', accent: '#fabba8', text: '#ffffff', sub: '#cccccc' },
+  { bg: '#2a0a2e', accent: '#da77ff', text: '#ffffff', sub: '#b88ec4' },
+  { bg: '#1a0a1e', accent: '#ff99cc', text: '#ffffff', sub: '#c490aa' },
+  // 綠色系
+  { bg: '#0d3b2e', accent: '#52b788', text: '#ffffff', sub: '#95d5b2' },
+  { bg: '#0d1f12', accent: '#a8e063', text: '#ffffff', sub: '#8bbc6e' },
+  { bg: '#1a2a1a', accent: '#f9ca24', text: '#ffffff', sub: '#c9b86a' },
+  { bg: '#0a2010', accent: '#00e676', text: '#ffffff', sub: '#60c488' },
+  { bg: '#0f1e0f', accent: '#69f0ae', text: '#ffffff', sub: '#7ec49a' },
+
+  // 特別款
+  { bg: '#1a1a1a', accent: '#ffffff', text: '#ffffff', sub: '#aaaaaa' }, 
+]
+
 function HomePage() {
   const [activeTrailer, setActiveTrailer] = useState(0)
+  const [scheme, setScheme] = useState(colorSchemes[0])
+
+  // 進頁面時隨機選一套配色
+  useEffect(() => {
+    const random = colorSchemes[Math.floor(Math.random() * colorSchemes.length)]
+    setScheme(random)
+  }, [])
 
   const upcoming = dramas.filter(d => d.year === 2026)
   const featured = dramas.filter(d => d.rating >= 8.5)
@@ -28,38 +75,38 @@ function HomePage() {
 
       {/* Hero 區 */}
       <div style={{
-        padding: '80px 48px 64px',
+        background: scheme.bg,
+        borderRadius: '24px',
+        padding: '80px 48px',
         marginBottom: '48px',
         textAlign: 'center',
         position: 'relative',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        transition: 'background 0.5s ease'
       }}>
 
-        {/* 背景裝飾圓圈 */}
+        {/* 裝飾光暈 */}
         <div style={{
-          position: 'absolute', top: '-60px', left: '-60px',
-          width: '300px', height: '300px',
-          borderRadius: '50%',
-          background: 'radial-gradient(circle, #fabba830 0%, transparent 70%)',
+          position: 'absolute', top: '-80px', left: '-80px',
+          width: '350px', height: '350px', borderRadius: '50%',
+          background: `radial-gradient(circle, ${scheme.accent}30 0%, transparent 70%)`,
           pointerEvents: 'none'
         }} />
         <div style={{
-          position: 'absolute', bottom: '-40px', right: '-40px',
-          width: '250px', height: '250px',
-          borderRadius: '50%',
-          background: 'radial-gradient(circle, #326fc320 0%, transparent 70%)',
+          position: 'absolute', bottom: '-60px', right: '-60px',
+          width: '280px', height: '280px', borderRadius: '50%',
+          background: `radial-gradient(circle, ${scheme.accent}20 0%, transparent 70%)`,
           pointerEvents: 'none'
         }} />
 
         {/* 小標籤 */}
         <div style={{
           display: 'inline-block',
-          background: '#fff5f3',
-          border: '1px solid #fabba8',
+          border: `1px solid ${scheme.accent}`,
           borderRadius: '999px',
           padding: '4px 16px',
-          fontSize: '13px',
-          color: '#fabba8',
+          fontSize: '12px',
+          color: scheme.accent,
           marginBottom: '24px',
           letterSpacing: '2px'
         }}>
@@ -68,9 +115,9 @@ function HomePage() {
 
         {/* 主標題 */}
         <h1 style={{
-          fontSize: 'clamp(32px, 6vw, 72px)',
+          fontSize: 'clamp(36px, 6vw, 72px)',
           fontWeight: '900',
-          color: '#132c56',
+          color: scheme.text,
           margin: '0 0 8px',
           lineHeight: '1.1',
           letterSpacing: '-1px',
@@ -79,27 +126,25 @@ function HomePage() {
           泰百一家親
         </h1>
         <h1 style={{
-          fontSize: 'clamp(32px, 6vw, 72px)',
+          fontSize: 'clamp(36px, 6vw, 72px)',
           fontWeight: '900',
           margin: '0 0 24px',
           lineHeight: '1.1',
           letterSpacing: '-1px',
-          background: 'linear-gradient(90deg, #fabba8, #326fc3)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
+          color: scheme.accent,
           animation: 'fadeSlideUp 0.8s ease 0.2s both'
         }}>
-
+          Thai GL Stole My Sleep
         </h1>
 
         {/* 副標題 */}
         <p style={{
-          fontSize: '18px',
-          color: '#888',
+          fontSize: '17px',
+          color: scheme.sub,
           margin: '0 0 40px',
           animation: 'fadeSlideUp 0.8s ease 0.4s both'
         }}>
-          關於泰百的網站，紀錄我喜歡的劇集、CP 和音樂
+          關於泰百的網站，推薦我喜歡的劇集、CP和音樂
         </p>
 
         {/* 按鈕 */}
@@ -107,39 +152,35 @@ function HomePage() {
           display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap',
           animation: 'fadeSlideUp 0.8s ease 0.6s both'
         }}>
-          <Link to="/dramas" style={{
-            background: '#132c56',
-            color: 'white',
+          <Link to="/dramas" className="btn-hover" style={{
+            background: scheme.accent,
+            color: scheme.bg,
             borderRadius: '999px',
             padding: '14px 36px',
             textDecoration: 'none',
             fontWeight: 'bold',
             fontSize: '16px',
-            transition: 'transform 0.2s, box-shadow 0.2s',
-            boxShadow: '0 4px 20px rgba(19,44,86,0.2)'
-          }}
-          onMouseEnter={e => e.target.style.transform = 'translateY(-2px)'}
-          onMouseLeave={e => e.target.style.transform = 'translateY(0)'}
-          >
+            boxShadow: `0 4px 20px ${scheme.accent}40`,
+            display: 'inline-block'
+          }}>
             瀏覽劇集列表
           </Link>
-          <Link to="/cp" style={{
-            background: 'white',
-            color: '#132c56',
-            border: '2px solid #fabba8',
+
+          <Link to="/cp" className="btn-hover" style={{
+            background: 'transparent',
+            color: scheme.text,
+            border: `2px solid ${scheme.text}50`,
             borderRadius: '999px',
             padding: '14px 36px',
             textDecoration: 'none',
             fontWeight: 'bold',
             fontSize: '16px',
-            transition: 'transform 0.2s'
-          }}
-          onMouseEnter={e => e.target.style.transform = 'translateY(-2px)'}
-          onMouseLeave={e => e.target.style.transform = 'translateY(0)'}
-          >
+            display: 'inline-block'
+          }}>
             認識 CP
           </Link>
         </div>
+
       </div>
 
       {/* 左7:右3 主體 */}

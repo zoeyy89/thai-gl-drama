@@ -48,6 +48,11 @@ button:hover {
   border-color: #fabba8;
 }
 
+.btn-hover:hover {
+  transform: scale(1.08);
+  transition: transform 0.2s ease;
+}
+
 @keyframes fadeSlideUp {
   from {
     opacity: 0;
