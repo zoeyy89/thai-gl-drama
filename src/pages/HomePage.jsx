@@ -184,8 +184,11 @@ function HomePage() {
       </div>
 
       {/* 左7:右3 主體 */}
-      <div style={{ display: 'flex', gap: '32px', alignItems: 'flex-start' }}>
-
+      <div className="home-layout" style={{
+        display: 'flex',
+        gap: '32px',
+        alignItems: 'flex-start'
+      }}>
         {/* 左側 7 */}
         <div style={{ flex: 7 }}>
 
@@ -285,7 +288,11 @@ function HomePage() {
         </div>
 
         {/* 右側 3 */}
-        <div style={{ flex: 3, position: 'sticky', top: '24px' }}>
+        <div className="home-sidebar" style={{
+          flex: 3,
+          position: 'sticky',
+          top: '24px'
+        }}>
           <h2 style={{ color: '#132c56', margin: '0 0 16px' }}>🎬 精選預告</h2>
 
           {/* YouTube iframe */}
