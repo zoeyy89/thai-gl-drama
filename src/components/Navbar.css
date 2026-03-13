@@ -1,0 +1,38 @@
+/* Navbar.css — 導覽列樣式 */
+nav {
+  background-color: #132c56;
+  padding: 16px 32px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(19, 44, 86, 0.2);
+}
+
+nav a {
+  color: #fffcfc;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+nav a:hover {
+  color: #fabba8;
+}
+
+nav img {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+nav img:hover {
+  transform: scale(1.5);
+  animation: shake 0.4s ease;
+}
+
+@keyframes shake {
+  0%   { transform: scale(1.15) rotate(0deg); }
+  20%  { transform: scale(1.15) rotate(-8deg); }
+  40%  { transform: scale(1.15) rotate(8deg); }
+  100% { transform: scale(1.15) rotate(0deg); }
+}
