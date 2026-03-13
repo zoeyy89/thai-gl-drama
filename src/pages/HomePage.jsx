@@ -21,18 +21,15 @@ const trailers = [
 const colorSchemes = [
   // 冷色系
   { bg: '#1a1a2e', accent: '#e94560', text: '#ffffff', sub: '#a8a8b3' },
-  { bg: '#2d1b4e', accent: '#c77dff', text: '#ffffff', sub: '#b8a9c9' },
   { bg: '#0a2342', accent: '#4facde', text: '#ffffff', sub: '#8cb8d0' },
   { bg: '#0f2027', accent: '#00d2ff', text: '#ffffff', sub: '#7ecce0' },
-  { bg: '#1c2b3a', accent: '#43e97b', text: '#ffffff', sub: '#7dc49a' },
-  { bg: '#0d2137', accent: '#a18cd1', text: '#ffffff', sub: '#9bacc4' },
+  { bg: '#0d2137', accent: '#a998d1', text: '#ffffff', sub: '#9bacc4' },
   { bg: '#0a1628', accent: '#38b6ff', text: '#ffffff', sub: '#7ab8d4' },
   { bg: '#0d1b2a', accent: '#56cfe1', text: '#ffffff', sub: '#8ac8d4' },
   { bg: '#141852', accent: '#7b9cff', text: '#ffffff', sub: '#9aaee0' },
   { bg: '#0e2040', accent: '#00b4d8', text: '#ffffff', sub: '#6ab8cc' },
 
   // 暖色系
-  { bg: '#2c1a0e', accent: '#e08c4a', text: '#ffffff', sub: '#c4a882' },
   { bg: '#1a0a00', accent: '#ff9a3c', text: '#ffffff', sub: '#d4956a' },
   { bg: '#1f0a0a', accent: '#ff6b6b', text: '#ffffff', sub: '#c98a8a' },
   { bg: '#2a1a00', accent: '#ffd166', text: '#ffffff', sub: '#d4b870' },
@@ -44,10 +41,8 @@ const colorSchemes = [
   { bg: '#1f1035', accent: '#ff6b9d', text: '#ffffff', sub: '#c9a8c0' },
   { bg: '#1a0d2e', accent: '#ff85a1', text: '#ffffff', sub: '#c49bb0' },
   { bg: '#1c1c1c', accent: '#fabba8', text: '#ffffff', sub: '#cccccc' },
-  { bg: '#2a0a2e', accent: '#da77ff', text: '#ffffff', sub: '#b88ec4' },
   { bg: '#1a0a1e', accent: '#ff99cc', text: '#ffffff', sub: '#c490aa' },
   // 綠色系
-  { bg: '#0d3b2e', accent: '#52b788', text: '#ffffff', sub: '#95d5b2' },
   { bg: '#0d1f12', accent: '#a8e063', text: '#ffffff', sub: '#8bbc6e' },
   { bg: '#1a2a1a', accent: '#f9ca24', text: '#ffffff', sub: '#c9b86a' },
   { bg: '#0a2010', accent: '#00e676', text: '#ffffff', sub: '#60c488' },
