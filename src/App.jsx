@@ -9,7 +9,7 @@ import FavoritePage from './pages/FavoritePage'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/thai-gl-drama/">
       <Navbar />
       <main style={{ padding: '0 48px' }}>  {/* ← 加這個 */}
         <Routes>
