@@ -35,6 +35,15 @@
 
 ## 本地開發
 ```bash
+# 安裝套件
 npm install
+
+# 啟動開發伺服器
 npm run dev
+```
+
+## 部署
+```bash
+# 部署到 GitHub Pages
+npm run deploy
 ```
