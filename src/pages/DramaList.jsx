@@ -35,7 +35,7 @@ function DramaList() {
   const sortedYears = Object.keys(groupedByYear).sort((a, b) => b - a)
 
   return (
-    <div>
+    <div style={{ padding: '20px 0' }}>
       <h1>劇集列表</h1>
 
       {/* 年份下拉 */}

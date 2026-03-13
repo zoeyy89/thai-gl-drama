@@ -21,7 +21,7 @@ function CPPage() {
   const cpList = Object.values(cpMap).sort((a, b) => b.dramas.length - a.dramas.length)
 
   return (
-    <div style={{ maxWidth: '720px', margin: '0 auto', padding: '32px 0' }}>
+    <div style={{ maxWidth: '720px', margin: '0 auto', padding: '20px 0' }}>
 
       {/* 頁首 */}
       <h1 style={{ color: '#132c56', marginBottom: '4px' }}>CP 介紹</h1>

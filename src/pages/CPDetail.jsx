@@ -12,8 +12,8 @@ function CPDetail() {
 
   if (!cp) {
     return (
-      <div style={{ padding: '32px 0' }}>
-        <p>找不到這組 CP，請等待緣分降臨 🌸</p>
+      <div style={{ padding: '20px 0' }}>
+        <p>找不到這組 CP，請等待緣分降臨</p>
         <Link to="/cp" style={{ color: '#326fc3' }}>回 CP 列表</Link>
       </div>
     )

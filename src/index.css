@@ -30,6 +30,10 @@ h1 {
   line-height: 1.1;
 }
 
+h1, h2, h3 {
+  margin-top: 0;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -42,4 +46,15 @@ button {
 }
 button:hover {
   border-color: #fabba8;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -86,6 +86,9 @@ function DramaDetail() {
         <span style={{ fontSize: '24px', fontWeight: 'bold', color: '#132c56' }}>
           ⭐ {drama.rating > 0 ? drama.rating : '—'}
         </span>
+        <span style={{ fontSize: '12px', color: '#aaa', marginLeft: '8px' }}>
+          來源：MyDramaList
+        </span>
       </div>
 
       {/* 劇情描述 */}

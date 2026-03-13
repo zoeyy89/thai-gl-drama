@@ -6,7 +6,7 @@ function FavoritePage() {
   const favoriteDramas = dramas.filter(drama => savedIds.includes(drama.id))
 
   return (
-    <div>
+    <div style={{ padding: '20px 0' }}>
       <h1>我的收藏</h1>
 
       {favoriteDramas.length === 0 ? (

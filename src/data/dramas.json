@@ -1155,5 +1155,492 @@
     "trailer": "",
     "ost": "",
     "fullTitle": "我是惡魔 第2季 I m Devil Season 2"
+  },
+  {
+    "id": 46,
+    "title": "The Air 4 Elements",
+    "englishTitle": "The Air 4 Elements",
+    "fullTitle": "The Air 4 Elements",
+    "year": 2026,
+    "episodes": 0,
+    "status": "upcoming",
+    "description": "「4 Elements」企劃之一；已公開預告，但公開文字資料尚未釋出完整劇情摘要。",
+    "poster": "",
+    "tags": [
+      "奇幻",
+      "命運"
+    ],
+    "cp": [
+      {
+        "name": "FreenBecky",
+        "actor1": "Freen Sarocha",
+        "actor2": "Rebecca Armstrong"
+      }
+    ],
+    "rating": 0,
+    "type": "主線GL",
+    "company": "IDOLFACTORY",
+    "trailer": "",
+    "ost": ""
+  },
+  {
+    "id": 47,
+    "title": "The Water 4 Elements",
+    "englishTitle": "The Water 4 Elements",
+    "fullTitle": "The Water 4 Elements",
+    "year": 2026,
+    "episodes": 0,
+    "status": "upcoming",
+    "description": "「4 Elements」企劃之一；已公開預告，主打 EngLot 新作。",
+    "poster": "",
+    "tags": [
+      "奇幻",
+      "命運"
+    ],
+    "cp": [
+      {
+        "name": "EngLot",
+        "actor1": "Engfa Waraha",
+        "actor2": "Charlotte Austin"
+      }
+    ],
+    "rating": 0,
+    "type": "主線GL",
+    "company": "IDOLFACTORY",
+    "trailer": "",
+    "ost": ""
+  },
+  {
+    "id": 48,
+    "title": "The Earth 4 Elements",
+    "englishTitle": "The Earth 4 Elements",
+    "fullTitle": "The Earth 4 Elements",
+    "year": 2026,
+    "episodes": 0,
+    "status": "upcoming",
+    "description": "「4 Elements」首部播出的子系列，Apple 與 Mim 主演；於 2026/1/24 於 Channel 7 首播。",
+    "poster": "",
+    "tags": [
+      "奇幻",
+      "命運"
+    ],
+    "cp": [
+      {
+        "name": "AppleMim",
+        "actor1": "Apple Lapisara Intarasut",
+        "actor2": "Mim Panthita"
+      }
+    ],
+    "rating": 0,
+    "type": "主線GL",
+    "company": "IDOLFACTORY",
+    "trailer": "",
+    "ost": ""
+  },
+  {
+    "id": 49,
+    "title": "The Fire 4 Elements",
+    "englishTitle": "The Fire 4 Elements",
+    "fullTitle": "The Fire 4 Elements",
+    "year": 2026,
+    "episodes": 0,
+    "status": "upcoming",
+    "description": "「4 Elements」另一子系列，已公開預告；目前公開資料僅穩定確認主演與平台。",
+    "poster": "",
+    "tags": [
+      "奇幻",
+      "命運"
+    ],
+    "cp": [
+      {
+        "name": "MilinNoey",
+        "actor1": "Milin Watinthanakit",
+        "actor2": "Noey"
+      }
+    ],
+    "rating": 0,
+    "type": "主線GL",
+    "company": "IDOLFACTORY",
+    "trailer": "",
+    "ost": ""
+  },
+  {
+    "id": 50,
+    "title": "Cranium",
+    "englishTitle": "Cranium",
+    "fullTitle": "Cranium",
+    "year": 2026,
+    "episodes": 0,
+    "status": "upcoming",
+    "description": "改編自 Nalan 作品，講述生物人類學領域的宿敵 Phinya 與 Busaya 因空難罹難者鑑定案再度合作。",
+    "poster": "",
+    "tags": [
+      "歡喜冤家",
+      "懸疑",
+      "醫生",
+      "改編小說"
+    ],
+    "cp": [
+      {
+        "name": "FreenBecky",
+        "actor1": "Rebecca Armstrong",
+        "actor2": "Freen Sarocha"
+      }
+    ],
+    "rating": 0,
+    "type": "主線GL",
+    "company": "IDOLFACTORY",
+    "trailer": "",
+    "ost": ""
+  },
+  {
+    "id": 51,
+    "title": "Broken of Love",
+    "englishTitle": "Broken of Love",
+    "fullTitle": "Broken of Love",
+    "year": 2026,
+    "episodes": 0,
+    "status": "upcoming",
+    "description": "女主因童年槍擊慘案失去父母，長大後踏上復仇之路，卻在黑暗中遇見意想不到的愛。",
+    "poster": "",
+    "tags": [
+      "黑暗",
+      "虐戀",
+      "商戰",
+      "療癒救贖"
+    ],
+    "cp": [
+      {
+        "name": "FayeAtom",
+        "actor1": "Faye Malisorn",
+        "actor2": "Atom Pariya"
+      }
+    ],
+    "rating": 0,
+    "type": "主線GL",
+    "company": "Fabel Entertainment",
+    "trailer": "https://www.youtube.com/watch?v=ILVAJdF1gVU",
+    "ost": ""
+  },
+  {
+    "id": 52,
+    "title": "Under Her Rules",
+    "englishTitle": "Under Her Rules",
+    "fullTitle": "Under Her Rules",
+    "year": 2026,
+    "episodes": 0,
+    "status": "upcoming",
+    "description": "助理 Alice 在第一份工作裡遇上強勢上司 Nannalin，從職場服從與權力張力逐步發展出危險曖昧。",
+    "poster": "",
+    "tags": [
+      "總裁×下屬",
+      "職場",
+      "階級差",
+      "黑暗"
+    ],
+    "cp": [
+      {
+        "name": "MeenaAoom",
+        "actor1": "Meena Rina",
+        "actor2": "Aoom Thaweeporn"
+      }
+    ],
+    "rating": 0,
+    "type": "主線GL",
+    "company": "MGI Beyond",
+    "trailer": "",
+    "ost": ""
+  },
+  {
+    "id": 53,
+    "title": "女生規則：禁愛遊戲 Girl Rules",
+    "englishTitle": "Girl Rules（กฎหลัก...ห้ามรักเธอ）",
+    "fullTitle": "女生規則：禁愛遊戲 Girl Rules กฎหลัก...ห้ามรักเธอ",
+    "year": 2026,
+    "episodes": 12,
+    "status": "upcoming",
+    "description": "六位女性在時尚與廣告產業裡捲入舊愛回歸、新戀情與複雜友情，是 GMMTV 目前最受矚目的群像 GL 之一。",
+    "poster": "",
+    "tags": [
+      "職場",
+      "復合",
+      "日常",
+      "成長"
+    ],
+    "cp": [
+      {
+        "name": "NamtanFilm",
+        "actor1": "Namtan Tipnaree",
+        "actor2": "Film Rachanun"
+      },
+      {
+        "name": "MilkLove",
+        "actor1": "Milk Pansa",
+        "actor2": "Love Pattranite"
+      },
+      {
+        "name": "ViewMim",
+        "actor1": "View Benyapa",
+        "actor2": "Mim Rattanawadee"
+      }
+    ],
+    "rating": 0,
+    "type": "主線GL",
+    "company": "GMMTV",
+    "trailer": "https://www.youtube.com/watch?v=lDUD3omAlHA",
+    "ost": "Girl Rules（主卡司演唱）"
+  },
+  {
+    "id": 54,
+    "title": "Ditto",
+    "englishTitle": "Ditto（ระฟ้าหล่นสวรรค์）",
+    "fullTitle": "Ditto ระฟ้าหล่นสวรรค์",
+    "year": 2026,
+    "episodes": 0,
+    "status": "upcoming",
+    "description": "以兩位名為 Rafah 的女性為核心，一人是空服員、一人是新秀舞者，故事聚焦名聲、期待與個人真相。",
+    "poster": "",
+    "tags": [
+      "職場",
+      "成長",
+      "日常"
+    ],
+    "cp": [
+      {
+        "name": "MilkLove",
+        "actor1": "Milk Pansa",
+        "actor2": "Love Pattranite"
+      }
+    ],
+    "rating": 0,
+    "type": "主線GL",
+    "company": "GMMTV",
+    "trailer": "",
+    "ost": ""
+  },
+  {
+    "id": 55,
+    "title": "Love's Echoes",
+    "englishTitle": "Love's Echoes（ให้รักกังวานในใจ）",
+    "fullTitle": "Love's Echoes ให้รักกังวานในใจ",
+    "year": 2026,
+    "episodes": 0,
+    "status": "upcoming",
+    "description": "GMMTV 2026 GL 之一，已公開 pilot；目前公開資料穩定確認主演與預告，完整集數與劇情細節仍待官方後續釋出。",
+    "poster": "",
+    "tags": [
+      "都會",
+      "虐戀"
+    ],
+    "cp": [
+      {
+        "name": "JuneMewnich",
+        "actor1": "June Wanwimol",
+        "actor2": "Mewnich Nannaphas"
+      }
+    ],
+    "rating": 0,
+    "type": "主線GL",
+    "company": "GMMTV",
+    "trailer": "https://www.youtube.com/watch?v=R0ny7lQSr2k",
+    "ost": ""
+  },
+  {
+    "id": 56,
+    "title": "Oxytoxin",
+    "englishTitle": "Oxytoxin（จุนใจไอดาว）",
+    "fullTitle": "Oxytoxin จุนใจไอดาว",
+    "year": 2026,
+    "episodes": 0,
+    "status": "upcoming",
+    "description": "以校園與「頂流女孩」小圈子為背景，描寫第五位女孩闖入後，名聲、階級與欲望被重新洗牌。",
+    "poster": "",
+    "tags": [
+      "校園",
+      "青梅竹馬",
+      "階級差",
+      "成長"
+    ],
+    "cp": [
+      {
+        "name": "WaifhaTonkhaw",
+        "actor1": "Waifha Chanitsiri",
+        "actor2": "Tonkhaw Nonthakarn"
+      }
+    ],
+    "rating": 0,
+    "type": "主線GL",
+    "company": "GMMTV",
+    "trailer": "https://www.youtube.com/watch?v=QNvnpjbNrRg",
+    "ost": ""
+  },
+  {
+    "id": 57,
+    "title": "Her",
+    "englishTitle": "Her（รักของเธอ）",
+    "fullTitle": "Her รักของเธอ",
+    "year": 2026,
+    "episodes": 0,
+    "status": "upcoming",
+    "description": "一名女子假扮新郎後捲入豪門祕密與謀殺未遂，之後以女性身分回來復仇，卻愛上目標家族中最溫柔的人。",
+    "poster": "",
+    "tags": [
+      "黑暗",
+      "虐戀",
+      "階級差",
+      "動作"
+    ],
+    "cp": [
+      {
+        "name": "NamtanFilm",
+        "actor1": "Tipnaree Weerawatnodom",
+        "actor2": "Rachanun Mahawan"
+      }
+    ],
+    "rating": 0,
+    "type": "主線GL",
+    "company": "GMMTV",
+    "trailer": "https://www.youtube.com/watch?v=OXfExloO350",
+    "ost": ""
+  },
+  {
+    "id": 58,
+    "title": "The Hidden Blood",
+    "englishTitle": "The Hidden Blood",
+    "fullTitle": "The Hidden Blood",
+    "year": 2026,
+    "episodes": 0,
+    "status": "upcoming",
+    "description": "DUQQ Entertainment 的 2026 GL 之一；公開資料已確認有預告，目前最穩定能核對的是卡司與平台。",
+    "poster": "",
+    "tags": [
+      "懸疑",
+      "校園"
+    ],
+    "cp": [
+      {
+        "name": "PaweensudaNichada",
+        "actor1": "Paweensuda Drouin",
+        "actor2": "Nichada Thongchua"
+      }
+    ],
+    "rating": 0,
+    "type": "主線GL",
+    "company": "DUQQ Entertainment",
+    "trailer": "",
+    "ost": ""
+  },
+  {
+    "id": 59,
+    "title": "Heart Code",
+    "englishTitle": "Heart Code（สืบลับจับใจ）",
+    "fullTitle": "心之密碼 Heart Code สืบลับจับใจ",
+    "year": 2026,
+    "episodes": 7,
+    "status": "upcoming",
+    "description": "高階警官之女 Vicky 進入秘密訓練計畫後，與紀律嚴明的 Thara 相遇；兩人夾在暗殺陰謀、家族悲劇與愛情之間。",
+    "poster": "",
+    "tags": [
+      "動作",
+      "警察",
+      "懸疑"
+    ],
+    "cp": [
+      {
+        "name": "TungpangJessie",
+        "actor1": "Pattaravadee Laosa",
+        "actor2": "Natsiya Prommart"
+      }
+    ],
+    "rating": 0,
+    "type": "主線GL",
+    "company": "Monomax / MONO Original",
+    "trailer": "",
+    "ost": ""
+  },
+  {
+    "id": 60,
+    "title": "Be My Angel",
+    "englishTitle": "Be My Angel（ฉันหลงรักเทวดาของฉัน）",
+    "fullTitle": "Be My Angel ฉันหลงรักเทวดาของฉัน",
+    "year": 2026,
+    "episodes": 8,
+    "status": "upcoming",
+    "description": "倒楣女孩 Jane 用 Lucky Point 許願，結果得到一位菜鳥天使 Z；整體走奇幻輕喜劇路線。",
+    "poster": "",
+    "tags": [
+      "奇幻",
+      "甜寵",
+      "命運"
+    ],
+    "cp": [
+      {
+        "name": "BamBamBaipor",
+        "actor1": "BamBam Niwirin",
+        "actor2": "Baipor Thitiya"
+      }
+    ],
+    "rating": 0,
+    "type": "主線GL",
+    "company": "Pennyy Studio / iQIYI",
+    "trailer": "https://www.youtube.com/watch?v=mHLvdCgV2xM",
+    "ost": ""
+  },
+  {
+    "id": 61,
+    "title": "I Wanna Be Sup'Tar",
+    "englishTitle": "I Wanna Be Sup'Tar",
+    "fullTitle": "I Wanna Be Sup'Tar",
+    "year": 2026,
+    "episodes": 8,
+    "status": "upcoming",
+    "description": "2015 同名劇的 GL 改編版，圍繞室友、娛樂圈與愛情喜劇展開；已於 2026/2/6 開播。",
+    "poster": "",
+    "tags": [
+      "職場",
+      "朋友變戀人",
+      "甜寵",
+      "改編小說"
+    ],
+    "cp": [
+      {
+        "name": "LillyBelle",
+        "actor1": "Lilly Ladapa",
+        "actor2": "Belle Jiratchaya"
+      }
+    ],
+    "rating": 0,
+    "type": "主線GL",
+    "company": "Change2561 / ONE31 / oneD",
+    "trailer": "",
+    "ost": ""
+  },
+  {
+    "id": 62,
+    "title": "Play Park",
+    "englishTitle": "Play Park",
+    "fullTitle": "Play Park",
+    "year": 2026,
+    "episodes": 0,
+    "status": "upcoming",
+    "description": "富家繼承人 Lilin 與遊樂園經理 Ing Ing 的人生在遊樂園交會，從責任與身份差異中慢慢產生感情。",
+    "poster": "",
+    "tags": [
+      "階級差",
+      "成長",
+      "日常"
+    ],
+    "cp": [
+      {
+        "name": "YadaTan",
+        "actor1": "Yada Narilya",
+        "actor2": "Tan Duangkaew"
+      }
+    ],
+    "rating": 0,
+    "type": "主線GL",
+    "company": "Channel 3",
+    "trailer": "",
+    "ost": ""
   }
 ]
