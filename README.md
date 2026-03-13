@@ -1,16 +1,28 @@
-# React + Vite
+# Thai GL Stole My Sleep 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 泰國泰百劇介紹網站，收錄 2014–2025 年泰百劇集資料。
 
-Currently, two official plugins are available:
+## 功能
+- 劇集列表（按年份分組，支援年份＋標籤篩選）
+- 劇集詳情（評分、標籤、CP、主題曲、預告片）
+- CP 介紹（演員資訊、出演作品）
+- 收藏功能（本地儲存）
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 工具和函式庫
+- React 18 + Vite
+- React Router v6
+- JavaScript
+- GitHub Pages
 
-## React Compiler
+## 資料來源
+- [MyDramaList](https://mydramalist.com)
+- [Wikipedia](https://wikipedia.org)
+- Twitter/X、Instagram、Facebook
+- [瘋泰百 glthai.com](https://glthai.com)
+- 部分資料為人工整理與核對
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 本地開發
+```bash
+npm install
+npm run dev
+```
