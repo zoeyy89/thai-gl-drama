@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import dramas from "../data/dramas.json";
+import { getYoutubeThumbnail } from "../utils";
 
 function DramaList() {
   const [filterYear, setFilterYear] = useState("");
@@ -123,78 +124,151 @@ function DramaList() {
         sortedYears.map((year) => (
           <div key={year} id={`year-${year}`}>
             <h2>── {year} ──</h2>
-            {groupedByYear[year].map((drama) => (
-              <div
-                key={drama.id}
-                style={{
-                  background: "#fff5f3",
-                  borderRadius: "16px",
-                  padding: "20px 24px",
-                  marginBottom: "16px",
-                  border: "1px solid #fabba8",
-                }}
-              >
-                <Link
-                  to={`/dramas/${drama.id}`}
-                  style={{ textDecoration: "none" }}
-                >
-                  <h3
-                    style={{
-                      margin: "0 0 8px 0",
-                      color: "#132c56",
-                      fontSize: "18px",
-                    }}
-                  >
-                    {drama.fullTitle}
-                  </h3>
-                </Link>
-                <p
+            {groupedByYear[year].map((drama) => {
+              const thumbnail = getYoutubeThumbnail(drama.trailer);
+              return (
+                <div
+                  key={drama.id}
                   style={{
-                    margin: "0 0 6px 0",
-                    color: "#888",
-                    fontSize: "14px",
+                    background: "#fff5f3",
+                    border: "1px solid #fabba8",
+                    borderRadius: "16px",
+                    overflow: "hidden",
+                    marginBottom: "16px",
+                    display: "flex",
                   }}
                 >
-                  {drama.year} |{" "}
-                  {drama.episodes > 0 ? `${drama.episodes}集` : "集數待補"} |{" "}
-                  {drama.status}
-                </p>
-                <p
-                  style={{
-                    margin: "0 0 8px 0",
-                    color: "#444",
-                    fontSize: "15px",
-                  }}
-                >
-                  {drama.description}
-                </p>
-                <p style={{ margin: "0 0 6px 0", fontSize: "14px" }}>
-                  ⭐ {drama.rating > 0 ? drama.rating : "暫無評分"}
-                </p>
-                <p
-                  style={{
-                    margin: "0 0 6px 0",
-                    fontSize: "13px",
-                    color: "#326fc3",
-                  }}
-                >
-                  {drama.tags.join(" · ")}
-                </p>
-                {drama.cp.length > 0 && (
-                  <p style={{ margin: "0", fontSize: "13px", color: "#888" }}>
-                    👥{" "}
-                    {drama.cp.map((c, i) => (
-                      <span key={i}>
-                        <Link to={`/cp/${c.name}`} style={{ color: "#326fc3" }}>
-                          {c.name}
-                        </Link>
-                        （{c.actor1} × {c.actor2}）
-                      </span>
-                    ))}
-                  </p>
-                )}
-              </div>
-            ))}
+                  {/* 左側文字 */}
+                  <div style={{ flex: 1, padding: "20px 24px" }}>
+                    <Link
+                      to={`/dramas/${drama.id}`}
+                      style={{ textDecoration: "none" }}
+                    >
+                      <h3
+                        style={{
+                          margin: "0 0 8px",
+                          color: "#132c56",
+                          fontSize: "18px",
+                        }}
+                      >
+                        {drama.fullTitle}
+                      </h3>
+                    </Link>
+                    <p
+                      style={{
+                        margin: "0 0 6px",
+                        color: "#888",
+                        fontSize: "14px",
+                      }}
+                    >
+                      {drama.year} |{" "}
+                      {drama.episodes > 0 ? `${drama.episodes}集` : "集數待補"}{" "}
+                      | {drama.status}
+                    </p>
+                    <p
+                      style={{
+                        margin: "0 0 8px",
+                        color: "#444",
+                        fontSize: "15px",
+                      }}
+                    >
+                      {drama.description}
+                    </p>
+                    <p style={{ margin: "0 0 6px", fontSize: "14px" }}>
+                      ⭐ {drama.rating > 0 ? drama.rating : "暫無評分"}
+                    </p>
+                    <p
+                      style={{
+                        margin: "0 0 6px",
+                        fontSize: "13px",
+                        color: "#326fc3",
+                      }}
+                    >
+                      {drama.tags.join(" · ")}
+                    </p>
+                    {drama.cp.length > 0 && (
+                      <p
+                        style={{ margin: "0", fontSize: "13px", color: "#888" }}
+                      >
+                        👥{" "}
+                        {drama.cp.map((c, i) => (
+                          <span key={i}>
+                            <Link
+                              to={`/cp/${c.name}`}
+                              style={{ color: "#326fc3" }}
+                            >
+                              {c.name}
+                            </Link>
+                            （{c.actor1} × {c.actor2}）
+                          </span>
+                        ))}
+                      </p>
+                    )}
+                  </div>
+
+                  {/* 右側縮圖（有才顯示）*/}
+                  {thumbnail && (
+                    <a
+                      href={drama.trailer}
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{
+                        width: "400px",
+                        flexShrink: 0,
+                        display: "block",
+                        position: "relative",
+                      }}
+                    >
+                      <img
+                        src={thumbnail}
+                        alt={drama.title}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                          objectPosition: "top",
+                          display: "block",
+                        }}
+                      />
+                      {/* 播放按鈕遮罩 */}
+                      <div
+                        style={{
+                          position: "absolute",
+                          inset: 0,
+                          background: "rgba(0,0,0,0.3)",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          opacity: 0,
+                          transition: "opacity 0.2s",
+                        }}
+                        onMouseEnter={(e) =>
+                          (e.currentTarget.style.opacity = 1)
+                        }
+                        onMouseLeave={(e) =>
+                          (e.currentTarget.style.opacity = 0)
+                        }
+                      >
+                        <div
+                          style={{
+                            width: "48px",
+                            height: "48px",
+                            background: "rgba(255,255,255,0.9)",
+                            borderRadius: "50%",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            fontSize: "20px",
+                          }}
+                        >
+                          ▶
+                        </div>
+                      </div>
+                    </a>
+                  )}
+                </div>
+              );
+            })}
           </div>
         ))
       )}
