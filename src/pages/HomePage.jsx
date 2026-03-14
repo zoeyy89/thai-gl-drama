@@ -93,8 +93,9 @@ function HomePage() {
 
   return (
     <div style={{ padding: "32px 0" }}>
-      {/* Hero 區 */}
+      {/* ===== 電腦版 Hero（影片）===== */}
       <div
+        className="hero-video"
         style={{
           borderRadius: "24px",
           overflow: "hidden",
@@ -103,7 +104,6 @@ function HomePage() {
           background: "#000",
         }}
       >
-        {/* YouTube 影片 */}
         <div style={{ position: "relative", paddingTop: "42%" }}>
           <iframe
             src={`https://www.youtube.com/embed/${heroVideo}?autoplay=1&mute=1&loop=1&playlist=${heroVideo}&controls=0&showinfo=0&rel=0&modestbranding=1`}
@@ -121,21 +121,18 @@ function HomePage() {
             allowFullScreen
           />
         </div>
-
-        {/* 文字遮罩層 */}
         <div
           style={{
             position: "absolute",
             inset: 0,
             background:
-              "linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.15) 50%, transparent 100%)",
+              "linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.15) 50%, transparent 100%)",
             display: "flex",
             flexDirection: "column",
             justifyContent: "flex-end",
             padding: "40px 48px",
           }}
         >
-          {/* 小標籤 */}
           <div
             style={{
               display: "inline-block",
@@ -151,8 +148,6 @@ function HomePage() {
           >
             2022 – 2026 泰國 GL 劇集收錄
           </div>
-
-          {/* 主標題 */}
           <h1
             style={{
               fontSize: "clamp(28px, 5vw, 60px)",
@@ -177,8 +172,108 @@ function HomePage() {
           >
             Stole My Sleep
           </h1>
+          <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+            <Link
+              to="/dramas"
+              className="btn-hover"
+              style={{
+                background: "#fabba8",
+                color: "#132c56",
+                borderRadius: "999px",
+                padding: "12px 28px",
+                textDecoration: "none",
+                fontWeight: "bold",
+                fontSize: "15px",
+                display: "inline-block",
+              }}
+            >
+              瀏覽劇集列表
+            </Link>
+            <Link
+              to="/cp"
+              className="btn-hover"
+              style={{
+                background: "transparent",
+                color: "white",
+                border: "2px solid rgba(255,255,255,0.5)",
+                borderRadius: "999px",
+                padding: "12px 28px",
+                textDecoration: "none",
+                fontWeight: "bold",
+                fontSize: "15px",
+                display: "inline-block",
+              }}
+            >
+              認識 CP 🌸
+            </Link>
+          </div>
+        </div>
+      </div>
 
-          {/* 按鈕 */}
+      {/* ===== 手機版 Hero（影片縮圖）===== */}
+      <div
+        className="hero-static"
+        style={{
+          display: "none",
+          borderRadius: "24px",
+          overflow: "hidden",
+          marginBottom: "48px",
+          position: "relative",
+          minHeight: "480px",
+          background: `url(https://img.youtube.com/vi/${heroVideo}/maxresdefault.jpg) center/cover no-repeat`,
+        }}
+      >
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background:
+              "linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 60%, transparent 100%)",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "flex-end",
+            padding: "40px 24px",
+          }}
+        >
+          <div
+            style={{
+              display: "inline-block",
+              border: "1px solid #fabba8",
+              borderRadius: "999px",
+              padding: "4px 16px",
+              fontSize: "12px",
+              color: "#fabba8",
+              marginBottom: "12px",
+              letterSpacing: "2px",
+              width: "fit-content",
+            }}
+          >
+            2022 – 2026 泰國 GL 劇集收錄
+          </div>
+          <h1
+            style={{
+              fontSize: "clamp(28px, 8vw, 48px)",
+              fontWeight: "900",
+              color: "white",
+              margin: "0 0 4px",
+              lineHeight: "1.1",
+              letterSpacing: "-1px",
+            }}
+          >
+            Thai GL
+          </h1>
+          <h1
+            style={{
+              fontSize: "clamp(28px, 8vw, 48px)",
+              fontWeight: "900",
+              margin: "0 0 20px",
+              lineHeight: "1.1",
+              letterSpacing: "-1px",
+              color: "#fabba8",
+            }}
+          >
+            Stole My Sleep
+          </h1>
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
             <Link
               to="/dramas"

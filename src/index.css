@@ -30,7 +30,9 @@ h1 {
   line-height: 1.1;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin-top: 0;
 }
 
@@ -64,7 +66,6 @@ button:hover {
   }
 }
 
-
 /* 手機版 */
 @media (max-width: 768px) {
   .home-layout {
@@ -77,5 +78,20 @@ button:hover {
 
   main {
     padding: 0 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-video {
+    display: none;
+  }
+  .hero-static {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-static {
+    display: none !important;
   }
 }
