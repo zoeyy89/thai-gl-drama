@@ -51,7 +51,15 @@
       gtag("js", new Date());
       gtag("config", "G-WG2JKPX7H6");
     </script>
-    <script type="module" crossorigin src="/thai-gl-drama/assets/index-DNdJABZV.js"></script>
+    <!-- 讓首頁接收跳轉-->
+    <script>
+      const redirect = sessionStorage.getItem("redirect");
+      if (redirect) {
+        sessionStorage.removeItem("redirect");
+        window.history.replaceState(null, null, "/thai-gl-drama" + redirect);
+      }
+    </script>
+    <script type="module" crossorigin src="/thai-gl-drama/assets/index-D4D2DLSa.js"></script>
     <link rel="stylesheet" crossorigin href="/thai-gl-drama/assets/index-BY0vs2QB.css">
   </head>
   <body>

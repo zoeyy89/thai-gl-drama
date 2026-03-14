@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // 把路徑轉成 query string，跳回首頁
+      const path = window.location.pathname;
+      const search = window.location.search;
+      const hash = window.location.hash;
+      const base = "/thai-gl-drama";
+      const redirect = path.slice(base.length) + search + hash;
+      sessionStorage.setItem("redirect", redirect);
+      window.location.replace(base + "/?p=1");
+    </script>
+  </head>
+  <body></body>
+</html>
