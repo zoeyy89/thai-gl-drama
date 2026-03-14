@@ -51,6 +51,14 @@
       gtag("js", new Date());
       gtag("config", "G-WG2JKPX7H6");
     </script>
+    <!-- 讓首頁接收跳轉-->
+    <script>
+      const redirect = sessionStorage.getItem("redirect");
+      if (redirect) {
+        sessionStorage.removeItem("redirect");
+        window.history.replaceState(null, null, "/thai-gl-drama" + redirect);
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
