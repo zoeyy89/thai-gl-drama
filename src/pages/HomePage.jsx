@@ -260,7 +260,7 @@ function HomePage() {
               letterSpacing: "-1px",
             }}
           >
-            Thai GL
+            泰百一家親
           </h1>
           <h1
             style={{
@@ -272,7 +272,7 @@ function HomePage() {
               color: "#fabba8",
             }}
           >
-            Stole My Sleep
+            Thai GL Stole My Sleep
           </h1>
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
             <Link
@@ -534,7 +534,7 @@ function HomePage() {
 
       {/* Spotify 歌單 */}
       <div style={{ marginTop: "48px" }}>
-        <h2 style={{ color: "#132c56", margin: "0 0 16px" }}>
+        <h2 style={{ color: "#3b4762", margin: "0 0 16px" }}>
           🎵 追劇必聽歌單
         </h2>
         <iframe
