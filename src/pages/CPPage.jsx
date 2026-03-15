@@ -40,9 +40,12 @@ function CPPage() {
         {cpList.map((cp) => {
           // 找第一部有預告片的劇當封面
           const coverDrama = cp.dramas.find((d) => d.trailer);
-          const thumbnail = coverDrama
-            ? getYoutubeThumbnail(coverDrama.trailer)
-            : null;
+          const cpInfo = cpData.find((c) => c.name === cp.name);
+          const coverImage = cpInfo?.photo1
+            ? cpInfo.photo1
+            : coverDrama
+              ? getYoutubeThumbnail(coverDrama.trailer)
+              : null;
 
           return (
             <Link
@@ -70,14 +73,16 @@ function CPPage() {
                 }}
               >
                 {/* 封面圖片 */}
+                {/* 封面圖片 */}
                 <div
                   style={{
                     width: "100%",
-                    height: "160px",
-                    background: thumbnail
-                      ? `url(${thumbnail}) center/cover no-repeat`
+                    height: "220px", // ← 從 160px 改成 220px
+                    background: coverImage
+                      ? `url(${coverImage}) center/cover no-repeat`
                       : "linear-gradient(135deg, #132c56, #326fc3)",
                     position: "relative",
+                    backgroundPosition: "top center", // ← 加這行，從上方開始裁切
                   }}
                 >
                   {/* 出演部數角標 */}
