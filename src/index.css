@@ -90,6 +90,17 @@ button:hover {
   }
 }
 
+@media (max-width: 768px) {
+  .drama-card {
+    flex-direction: column !important;
+  }
+
+  .drama-card-thumbnail {
+    width: 100% !important;
+    height: 160px !important;
+  }
+}
+
 @media (min-width: 769px) {
   .hero-static {
     display: none !important;

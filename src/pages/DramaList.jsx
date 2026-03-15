@@ -129,6 +129,7 @@ function DramaList() {
               return (
                 <div
                   key={drama.id}
+                  className="drama-card"
                   style={{
                     background: "#fff5f3",
                     border: "1px solid #fabba8",
@@ -209,6 +210,7 @@ function DramaList() {
                   {/* 右側縮圖（有才顯示）*/}
                   {thumbnail && (
                     <a
+                      className="drama-card-thumbnail"
                       href={drama.trailer}
                       target="_blank"
                       rel="noreferrer"
