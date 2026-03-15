@@ -991,13 +991,13 @@
   },
   {
     "id": 46,
-    "title": "The Air 4 Elements",
+    "title": "四元素 The Air 4 Elements",
     "englishTitle": "The Air 4 Elements",
     "fullTitle": "The Air 4 Elements",
     "year": 2026,
     "episodes": 0,
     "status": "upcoming",
-    "description": "「4 Elements」企劃之一；已公開預告，但公開文字資料尚未釋出完整劇情摘要。",
+    "description": "「四元素 4 Elements」企劃之一；已公開預告，但公開文字資料尚未釋出完整劇情摘要。",
     "poster": "",
     "tags": ["奇幻", "命運"],
     "cp": [
@@ -1015,13 +1015,13 @@
   },
   {
     "id": 47,
-    "title": "The Water 4 Elements",
+    "title": "四元素：The Water 4 Elements",
     "englishTitle": "The Water 4 Elements",
     "fullTitle": "The Water 4 Elements",
     "year": 2026,
     "episodes": 0,
     "status": "upcoming",
-    "description": "「4 Elements」企劃之一；已公開預告，主打 EngLot 新作。",
+    "description": "「四元素 4 Elements」企劃之一；已公開預告，主打 EngLot 新作。",
     "poster": "",
     "tags": ["奇幻", "命運"],
     "cp": [
@@ -1039,13 +1039,13 @@
   },
   {
     "id": 48,
-    "title": "The Earth 4 Elements",
+    "title": "四元素：大地情緣 The Earth 4 Elements",
     "englishTitle": "The Earth 4 Elements",
     "fullTitle": "The Earth 4 Elements",
     "year": 2026,
     "episodes": 0,
     "status": "upcoming",
-    "description": "「4 Elements」首部播出的子系列，Apple 與 Mim 主演；於 2026/1/24 於 Channel 7 首播。",
+    "description": "「四元素 4 Elements」首部播出的子系列，Apple 與 Mim 主演；於 2026/1/24 於 Channel 7 首播。",
     "poster": "",
     "tags": ["奇幻", "命運"],
     "cp": [
@@ -1063,13 +1063,13 @@
   },
   {
     "id": 49,
-    "title": "The Fire 4 Elements",
+    "title": "四元素 The Fire 4 Elements",
     "englishTitle": "The Fire 4 Elements",
     "fullTitle": "The Fire 4 Elements",
     "year": 2026,
     "episodes": 0,
     "status": "upcoming",
-    "description": "「4 Elements」另一子系列，已公開預告；目前公開資料僅穩定確認主演與平台。",
+    "description": "「四元素 4 Elements」另一子系列，已公開預告；目前公開資料僅穩定確認主演與平台。",
     "poster": "",
     "tags": ["奇幻", "命運"],
     "cp": [
@@ -1106,7 +1106,7 @@
     "rating": 0,
     "type": "主線GL",
     "company": "IDOLFACTORY",
-    "trailer": "",
+    "trailer": "https://youtu.be/lgbQKzoliY4?si=odFCI5San3x_oh6q",
     "ost": ""
   },
   {
@@ -1154,7 +1154,7 @@
     "rating": 0,
     "type": "主線GL",
     "company": "MGI Beyond",
-    "trailer": "",
+    "trailer": "https://youtu.be/Mrm0Ej8e_Yw?si=NwHg-eqthMDptqrW",
     "ost": ""
   },
   {
@@ -1212,7 +1212,7 @@
     "rating": 0,
     "type": "主線GL",
     "company": "GMMTV",
-    "trailer": "",
+    "trailer": "https://youtu.be/30LfbsWHCW4?si=V30O7eKdknS43PEU",
     "ost": ""
   },
   {
@@ -1308,7 +1308,7 @@
     "rating": 0,
     "type": "主線GL",
     "company": "DUQQ Entertainment",
-    "trailer": "",
+    "trailer": "https://youtu.be/wfEgXrB5Xuo?si=lT1aueNtWil3ce92",
     "ost": ""
   },
   {
@@ -1361,7 +1361,7 @@
   },
   {
     "id": 61,
-    "title": "I Wanna Be Sup'Tar",
+    "title": "我要成為超級巨星 I Wanna Be Sup'Tar",
     "englishTitle": "I Wanna Be Sup'Tar",
     "fullTitle": "I Wanna Be Sup'Tar",
     "year": 2026,
@@ -1380,12 +1380,12 @@
     "rating": 0,
     "type": "主線GL",
     "company": "Change2561 / ONE31 / oneD",
-    "trailer": "",
+    "trailer": "https://youtu.be/nVOlVrf2aa0?si=be_jFbWYMyYqmBsW",
     "ost": ""
   },
   {
     "id": 62,
-    "title": "Play Park",
+    "title": "遊樂園 Play Park",
     "englishTitle": "Play Park",
     "fullTitle": "Play Park",
     "year": 2026,
@@ -1404,7 +1404,7 @@
     "rating": 0,
     "type": "主線GL",
     "company": "Channel 3",
-    "trailer": "",
+    "trailer": "https://youtu.be/y15ZuMleTKk?si=vyssdKemy0uOP9Kn",
     "ost": ""
   },
   {
