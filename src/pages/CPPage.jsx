@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import dramas from "../data/dramas.json";
 import { getYoutubeThumbnail } from "../utils";
+import cpData from "../data/cp.json";
 
 function CPPage() {
   const cpMap = {};
