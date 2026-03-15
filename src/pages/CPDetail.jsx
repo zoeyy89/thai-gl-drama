@@ -22,7 +22,7 @@ function CPDetail() {
   }
 
   return (
-    <div style={{ maxWidth: "720px", margin: "0 auto", padding: "32px 0" }}>
+    <div style={{ maxWidth: "1020px", margin: "0 auto", padding: "20px 0" }}>
       {/* 回上頁 */}
       <Link
         to="/cp"
