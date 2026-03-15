@@ -158,7 +158,7 @@ function HomePage() {
               letterSpacing: "-1px",
             }}
           >
-            Thai GL
+            泰百一家親
           </h1>
           <h1
             style={{
@@ -170,7 +170,7 @@ function HomePage() {
               color: "#fabba8",
             }}
           >
-            Stole My Sleep
+            Thai GL Stole My Sleep
           </h1>
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
             <Link
@@ -204,7 +204,7 @@ function HomePage() {
                 display: "inline-block",
               }}
             >
-              認識 CP 🌸
+              認識 CP
             </Link>
           </div>
         </div>
