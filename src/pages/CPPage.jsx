@@ -78,7 +78,7 @@ function CPPage() {
                 <div
                   style={{
                     width: "100%",
-                    height: "220px", // ← 從 160px 改成 220px
+                    height: "240px",
                     background: coverImage
                       ? `url(${coverImage}) center/cover no-repeat`
                       : "linear-gradient(135deg, #132c56, #326fc3)",
